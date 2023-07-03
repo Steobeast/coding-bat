@@ -26,7 +26,4 @@ describe("Should take a given string and repeat it for the amount of times there
         const result = stringTimes("Hi", 3) 
         assert.equal(result, "HiHiHi")
     })
-
-
-
 })
