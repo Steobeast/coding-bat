@@ -2,9 +2,9 @@ import { assert } from "chai"
 import { backAround } from "../src"
 
 
-describe("Should take the last letter of a string and return a string that has that last letter in the front and repeated at the back of the string", () => {
+describe("backAround", () => {
 
-    it("Should take in the word cat and return tcatt", () => {
+    it("Should return tcatt when cat is passed in", () => {
         const result = backAround("cat")
         assert.equal(result, "tcatt")
     })
