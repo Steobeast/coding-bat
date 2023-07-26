@@ -9,7 +9,7 @@ square([]) → []
 import { assert } from "chai";
 import { square } from "../src";
 
-describe("Should take a given list of integers and return a list where each integer is multiplied by itself", () => {
+describe("square", () => {
   it("Should take a list of positive intergers and return the square value of them", () => {
     const result = square([1, 2, 3]);
     assert.deepEqual(result, [1, 4, 9]);
