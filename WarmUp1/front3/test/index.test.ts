@@ -2,7 +2,7 @@ import { assert } from "chai"
 import { front3 } from "../src"
 
 
-describe("front3()", () => {
+describe("front3", () => {
 
     it("Should take in the word Java and return JavJavJav", () => {
         const result = front3("Java")
@@ -27,5 +27,9 @@ describe("front3()", () => {
     it("Should take in the word aaa and return aaa", () => {
         const result = front3("aaa")
         assert.equal(result, "aaaaaaaaa")
+    })
+    it("Should test when a sting is less than 3 letters in length", () => {
+        const result = front3("a");
+        assert.equal(result, "aaa")
     })
 })
