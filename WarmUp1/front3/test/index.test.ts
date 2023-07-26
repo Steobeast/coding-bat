@@ -2,7 +2,7 @@ import { assert } from "chai"
 import { front3 } from "../src"
 
 
-describe("It should repeat the first 3 letters of a word over 3 times unless the string is less than 3 letter then just repeat the same letters 3 times", () => {
+describe("front3()", () => {
 
     it("Should take in the word Java and return JavJavJav", () => {
         const result = front3("Java")
