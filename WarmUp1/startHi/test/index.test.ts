@@ -11,7 +11,7 @@ startHi("hello hi") → false
 import { assert } from "chai"
 import { startHi } from "../src"
 
-describe("Should true if string starts with hi, otherwise return false", () => {
+describe("startHi", () => {
 
     it("Should return true when ,hi there, is passed into the equation", () => {
         const result = startHi("hi there")
