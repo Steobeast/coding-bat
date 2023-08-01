@@ -16,12 +16,10 @@ describe("in3050", () => {
     const result = in3050(30, 31);
     assert.equal(result, true);
   });
-
   it("Shoulde return false when the values 30, 41 are passed in", () => {
     const result = in3050(30, 41);
     assert.equal(result, false);
   });
-
   it("Shoulde return true when the values 40, 50 are passed in", () => {
     const result = in3050(40, 50);
     assert.equal(result, true);
