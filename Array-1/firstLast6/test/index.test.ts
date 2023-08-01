@@ -11,7 +11,7 @@ firstLast6([13, 6, 1, 2, 3]) → false
 import { assert } from "chai";
 import { firstLast6 } from "../src";
 
-describe("firstLast6()", () => {
+describe("firstLast6", () => {
   it("Should return true if 6 is at the back of an array", () => {
     const result = firstLast6([1, 2, 6]);
     assert.deepEqual(result, true);
