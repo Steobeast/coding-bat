@@ -1,6 +1,7 @@
 /*
 
-Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so "kitten" yields"kikittenki". If the string length is less than 2, use whatever chars are there.
+Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, 
+so "kitten" yields"kikittenki". If the string length is less than 2, use whatever chars are there.
 
 
 front22("kitten") → "kikittenki"
@@ -41,5 +42,13 @@ describe("front22", () => {
     it("Should take a and return aaa", () => {
         const result = front22("a")
         assert.equal(result, "aaa")
+    })
+    it("Should take logic and return lologiclo", () => {
+        const result = front22("logic")
+        assert.equal(result, "lologiclo")
+    })
+    it("Should take aaa and return aaa", () => {
+        const result = front22("aaa")
+        assert.equal(result, "aaaaaaa")
     })
 })
