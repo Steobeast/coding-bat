@@ -12,20 +12,19 @@ hasTeen(20, 10, 13) → true
 import { assert } from "chai";
 import { hasTeen } from "../src";
 
-
 describe("hasTeen", () => {
-    it("Should return true if 1 of the values is within range", () => {
-        const result = hasTeen(13, 20, 10);
-        assert.equal(result, true)
-    })
-    it("Should return true if 2 of the values are within range", () => {
-        const result = hasTeen(13, 14, 10);
-        assert.equal(result, true)
-    })
+  it("Should return true if 1 of the values is within range", () => {
+    const result = hasTeen(13, 20, 10);
+    assert.equal(result, true);
+  });
+  
+  it("Should return true if 2 of the values are within range", () => {
+    const result = hasTeen(13, 14, 10);
+    assert.equal(result, true);
+  });
 
-    it("Should return false if no values are within range", () => {
-        const result = hasTeen(12, 20, 10);
-        assert.equal(result, false)
-    })
-
-})
+  it("Should return false if no values are within range", () => {
+    const result = hasTeen(12, 20, 10);
+    assert.equal(result, false);
+  });
+});
