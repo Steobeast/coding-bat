@@ -6,9 +6,12 @@ doubleX("axaxax") → false
 doubleX("xxxxx") → true*/
 
 export function doubleX(string: string): boolean {
-    for (let index = 0; index < string.length; index++) {
-        if (string[index].toLowerCase() == "x" && string[index].toLowerCase() == string[index +1].toLowerCase())
-        return true
-    }
-    return false
+  for (let index = 0; index < string.length; index++) {
+    if (
+      string[index].toLowerCase() == "x" &&
+      string[index].toLowerCase() == string[index + 1].toLowerCase()
+    )
+      return true;
+  }
+  return false;
 }
